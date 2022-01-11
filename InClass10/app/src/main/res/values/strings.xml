@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">In Class 10</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name ="paths">Paths Activity</string>
+</resources>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">InClass07</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="delete">Delete</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone Number</string>
+    <string name="phone_type">Phone Type</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="update">Update</string>
+    <string name="contact_list">Contact List</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="new_contact">New Contact</string>
+    <string name="edit_contact">Edit Contact</string>
+    <string name="entry_warning">One or more fields are empty</string>
+    <string name="add_success">Contact added successfully!</string>
+    <string name="delete_success">Contact deleted successfully!</string>
+    <string name="update_success">Contact updated successfully!</string>
+    <string-array name="types_array">
+        <item>CELL</item>
+        <item>OFFICE</item>
+        <item>HOME</item>
+    </string-array>
+</resources>

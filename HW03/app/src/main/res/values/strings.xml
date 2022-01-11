@@ -1,0 +1,27 @@
+<!--HW3-->
+<!--strings.xml-->
+<!--Evan Hemming and Zaccary Hudson-->
+<resources>
+    <string name="app_name">HW03</string>
+    <string name="cities">Cities</string>
+    <string name="current_weather">Current Weather</string>
+    <string name="weather_forecast">Weather Forecast</string>
+
+    <string name="temp">Temperature</string>
+    <string name="temp_max">Temperature Max</string>
+    <string name="temp_min">Temperature Min</string>
+    <string name="desc">Description</string>
+    <string name="humidity">Humidity</string>
+    <string name="humidityForecast">Humidity: </string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="wind_deg">Wind Degree</string>
+    <string name="cloud">Cloudiness</string>
+    <string name="check_forecast">Check Forecast</string>
+    <string name="fahrenheit"> F</string>
+    <string name="mph"> miles/hr</string>
+    <string name="degrees"> degrees</string>
+    <string name="max">Max: </string>
+    <string name="min">Min: </string>
+
+
+</resources>

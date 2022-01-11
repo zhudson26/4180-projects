@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--HW3-->
+<!--fragment_weather.xml-->
+<!--Evan Hemming and Zaccary Hudson-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherFragment">
+
+    <ImageView
+        android:id="@+id/weatherIcon"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cityText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/weatherIcon"
+        app:layout_constraintEnd_toStartOf="@+id/weatherIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/weatherIcon" />
+
+    <TextView
+        android:id="@+id/tempText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/temp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityText" />
+
+    <TextView
+        android:id="@+id/tempEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tempText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintStart_toStartOf="@+id/tempMaxEdit" />
+
+    <TextView
+        android:id="@+id/tempMaxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/temp_max"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tempText"
+        app:layout_constraintTop_toBottomOf="@+id/tempText" />
+
+    <TextView
+        android:id="@+id/tempMaxEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tempMaxText"
+        app:layout_constraintTop_toTopOf="@+id/tempMaxText" />
+
+    <TextView
+        android:id="@+id/tempMinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/temp_min"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tempMaxText"
+        app:layout_constraintTop_toBottomOf="@+id/tempMaxText" />
+
+    <TextView
+        android:id="@+id/tempMinEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tempMaxEdit"
+        app:layout_constraintTop_toTopOf="@+id/tempMinText" />
+
+    <TextView
+        android:id="@+id/descText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/desc"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tempMinText"
+        app:layout_constraintTop_toBottomOf="@+id/tempMinText" />
+
+    <TextView
+        android:id="@+id/descEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tempMinEdit"
+        app:layout_constraintTop_toTopOf="@+id/descText" />
+
+    <TextView
+        android:id="@+id/humidityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/humidity"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/descText"
+        app:layout_constraintTop_toBottomOf="@+id/descText" />
+
+    <TextView
+        android:id="@+id/humidityEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/descEdit"
+        app:layout_constraintTop_toTopOf="@+id/humidityText" />
+
+    <TextView
+        android:id="@+id/windSpeedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/wind_speed"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/humidityText"
+        app:layout_constraintTop_toBottomOf="@+id/humidityText" />
+
+    <TextView
+        android:id="@+id/windSpeedEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/humidityEdit"
+        app:layout_constraintTop_toTopOf="@+id/windSpeedText" />
+
+    <TextView
+        android:id="@+id/windDegText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/wind_deg"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/windSpeedText"
+        app:layout_constraintTop_toBottomOf="@+id/windSpeedText" />
+
+    <TextView
+        android:id="@+id/windDegEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/windSpeedEdit"
+        app:layout_constraintTop_toTopOf="@+id/windDegText" />
+
+    <TextView
+        android:id="@+id/cloudText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/cloud"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/windDegText"
+        app:layout_constraintTop_toBottomOf="@+id/windDegText" />
+
+    <TextView
+        android:id="@+id/cloudEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/windDegEdit"
+        app:layout_constraintTop_toTopOf="@+id/cloudText" />
+
+    <Button
+        android:id="@+id/checkForecastButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="@string/check_forecast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

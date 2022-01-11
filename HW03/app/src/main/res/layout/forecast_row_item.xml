@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--HW3-->
+<!--forecast_row_item.xml-->
+<!--Evan Hemming and Zaccary Hudson-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/timeEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/forecastTempEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/timeEdit"
+        app:layout_constraintTop_toBottomOf="@+id/timeEdit" />
+
+    <TextView
+        android:id="@+id/forecastMaxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/max"
+        app:layout_constraintStart_toEndOf="@+id/forecastTempEdit"
+        app:layout_constraintTop_toTopOf="@+id/forecastTempEdit" />
+
+    <TextView
+        android:id="@+id/forecastMaxEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/forecastMaxText"
+        app:layout_constraintTop_toTopOf="@+id/forecastMaxText" />
+
+    <TextView
+        android:id="@+id/forecastMinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/min"
+        app:layout_constraintStart_toEndOf="@+id/forecastMaxEdit"
+        app:layout_constraintTop_toTopOf="@+id/forecastMaxEdit" />
+
+    <TextView
+        android:id="@+id/forecastMinEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/forecastMinText"
+        app:layout_constraintTop_toTopOf="@+id/forecastMinText" />
+
+    <TextView
+        android:id="@+id/forecastHumidityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/humidityForecast"
+        app:layout_constraintStart_toStartOf="@+id/forecastTempEdit"
+        app:layout_constraintTop_toBottomOf="@+id/forecastTempEdit" />
+
+    <TextView
+        android:id="@+id/forecastHumidityEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/forecastHumidityText"
+        app:layout_constraintTop_toTopOf="@+id/forecastHumidityText" />
+
+    <TextView
+        android:id="@+id/forecastDescEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/forecastHumidityText"
+        app:layout_constraintTop_toBottomOf="@+id/forecastHumidityText" />
+
+    <ImageView
+        android:id="@+id/forecastImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeEdit"
+        app:srcCompat="?android:attr/activatedBackgroundIndicator" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
